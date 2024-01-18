@@ -4,7 +4,7 @@
 
 <h2>Demonstração:</h2>
 
-Link para o Site do Sonic
+Link para o Site do Sonic : https://camillalarissa.github.io/site-sonic-sadrak/
 
 <h2>Tecnologias Utilizadas:</h2>
 
