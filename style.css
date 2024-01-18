@@ -1,0 +1,406 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'niseSegaSonic';
+    src: url(Fonte/NiseSegaSonic.TTF) format(truetype);
+}
+
+body {
+    background-color: black;
+    width: 100vw;
+    min-height: 100vh;
+
+}
+
+/*LOGO*/
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.logo-anel {
+    width: 4rem;
+}
+
+
+
+/*CONFIGURAÇAO CARD*/
+
+.container-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 1438px;
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    position: relative;
+}
+
+/*BUTTON DE NAVEGAÇAO*/
+
+.container .slide-button {
+    position: absolute;
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    color: #112E70;
+    border: none;
+    outline: none;
+    background: #F3C420;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transform: translatey(-50%);
+}
+
+
+.container .slide-button:hover {
+    background: #E8DB00;
+}
+
+.container .slide-button#button-left {
+    left: -20px;
+    display: none;
+}
+
+.container .slide-button#button-right {
+    right: -20px;
+}
+
+.container .slider {
+    display: grid;
+    grid-template-columns: repeat(21, 1fr);
+    gap: 2rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+/*BARRA DE NAVEGAÇAO*/
+
+.container .slider::-webkit-scrollbar {
+    display: none;
+}
+
+
+.container .slider-scrollbar {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+.slider-scrollbar .scrollbar-track {
+    height: 6px;
+    width: 100%;
+    background: #fff;
+    position: relative;
+    border-radius: 4px;
+}
+
+
+.slider-scrollbar:hover .scrollbar-track {
+    height: 4px;
+}
+
+
+.slider-scrollbar .scrollbar-thumb {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    background: #2488E7;
+    border-radius: inherit;
+    cursor: grab;
+}
+
+
+.slider-scrollbar .scrollbar-thumb:active {
+    cursor: grab;
+    height: 8px;
+    top: -2px;
+}
+
+
+.slider-scrollbar .scrollbar-thumb::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -10px;
+    bottom: -10px;
+}
+
+/*STYLE CARDS*/
+
+.container img {
+    width: 25rem;
+    height: 20rem;
+}
+
+.card {
+    padding: 1rem;
+    border-radius: 8rem;
+    width: 450px;
+    height: 420px;
+}
+
+
+
+#sonic {
+    background-color: #2488E7;
+    border: 2px solid #FBBA15;
+}
+
+#sonic p:hover {
+    color: #FBBA15;
+}
+
+#super-sonic {
+
+    background-color: #E8DB00;
+    border: 2px solid #F61320;
+}
+
+#super-sonic p:hover {
+    color: #F61320;
+}
+
+#tails {
+
+    background-color: #FFB300;
+    border: 2px solid #E6E6E6;
+}
+
+#tails p:hover {
+    color: #E6E6E6;
+}
+
+#nuckles {
+    background-color: #FC1548;
+    border: 2px solid #2CE101;
+
+}
+
+#nuckles p:hover {
+    color: #2CE101;
+}
+
+#shadow {
+    background-color: #212121;
+    padding: 6.5rem;
+    display: flex;
+    align-items: center;
+    border: 2px solid #F9440E;
+
+}
+
+#shadow p:hover {
+    color: #F9440E;
+}
+
+#img-shadow {
+    width: 15rem;
+
+}
+
+#shadow p {
+    color: #fff;
+
+
+}
+
+#center {
+    display: flex;
+    flex-direction: column;
+}
+
+#super-Shadow {
+    background-color: #F5E89A;
+    padding: 6.5rem;
+    display: flex;
+    align-items: center;
+    margin-top: 2px;
+    border: 2px solid #E80203;
+}
+
+#super-Shadow p:hover {
+    color: #E80203;
+
+}
+
+#img-supershadow {
+    width: 15rem;
+}
+
+
+#amy {
+    background-color: #FF83FF;
+    border: 2px solid #FFFFFF;
+}
+
+#amy p:hover {
+    color: #FFFFFF;
+}
+
+#silver {
+    background-color: #C7D9DF;
+    border: 2px solid #22FEFD;
+}
+
+#silver p:hover {
+    color: #22FEFD;
+}
+
+#mighty {
+    background-color: #443333;
+    border: 2px solid #DB151F;
+}
+
+#mighty p:hover {
+    color: #DB151F;
+}
+
+#classic_ray {
+    background-color: #F3C420;
+    border: 2px solid #0D297E;
+}
+
+#classic_ray p:hover {
+    color: #0D297E;
+}
+
+#robotnik {
+    background-color: #fff;
+    border: 2px solid #C5C6C5;
+}
+
+#robotnik p:hover {
+    color: #C5C6C5;
+}
+
+#metal-sonic {
+    background-color: #1788FA;
+    border: 2px solid #F0D902;
+}
+
+#metal-sonic p:hover {
+    color: #F0D902;
+}
+
+#metal_knuckles {
+    background-color: #FF9595;
+    border: 2px solid #3B9C05;
+}
+
+#metal_knuckles p:hover {
+    color: #3B9C05;
+}
+
+#hyper-sonic {
+    background-color: #FCFCF1;
+    border: 2px solid #EC2731;
+}
+
+#hyper-sonic p:hover {
+    color: #EC2731;
+}
+
+#rabbit {
+    background-color: #F6D7B4;
+    border: 2px solid #E65608;
+}
+
+#rabbit p:hover {
+    color: #E65608;
+}
+
+#tails-metal {
+    background-color: #FB512D;
+    border: 2px solid #C6C5C3;
+}
+
+#tails-metal p:hover {
+    color: #C6C5C3;
+}
+
+#charmy {
+    background-color: #1788FA;
+    border: 2px solid #FFCC0C;
+}
+
+#charmy p:hover {
+    color: #FFCC0C;
+}
+
+#espio {
+    background-color: #FFFF00;
+    border: 2px solid #FF03D6;
+}
+
+#espio p:hover {
+    color: #FF03D6;
+}
+
+#vector {
+    background-color: #2C2020;
+    border: 2px solid #0F5F0A;
+
+}
+
+#vector p {
+    color: #fff;
+}
+
+#vector p:hover {
+    color: #0F5F0A;
+}
+
+#rouge {
+    background-color: #EF7EC6;
+    border: 2px solid #e08d08;
+}
+
+#rouge p:hover {
+    color: #FFB643;
+}
+
+p {
+    font-family: 'niseSegaSonic';
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 10px;
+    color: #2C2020;
+}
+
+/*RODAPE*/
+
+footer h3 {
+    font-family: niseSegaSonic;
+    color: #fff;
+    font-size: 1rem;
+    letter-spacing: 6px;
+
+}
+
+footer {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+
+}
+
+span {
+    font-family: 'Courier New', Courier, monospace;
+
+}
